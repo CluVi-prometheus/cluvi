@@ -5,7 +5,17 @@
 *.pem
 *.key
 
-# 데이터 · 고객 사진 · 모델 파일 — Hugging Face 비공개 저장소에만 둠
+# 사진은 기본 차단. 직접 만들거나 찍은 그림만 아래 허용 폴더에 둠 (고객 사진 금지)
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+!docs/assets/**
+!web/src/assets/**
+!web/public/**
+
+# 데이터 · 예측 결과 · 모델 파일 — Hugging Face 비공개 저장소나 각자 PC에만
 data/
 images/
 checkpoints/
@@ -15,14 +25,21 @@ outputs/
 *.pt
 *.pth
 *.ckpt
+*.onnx
+*.gguf
 *.npz
 *.parquet
+wandb/
+runs/
 
 # Python
 __pycache__/
 *.pyc
 .venv/
 .ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
 
 # 상담원 화면 (web)
 node_modules/
