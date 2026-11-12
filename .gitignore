@@ -1,0 +1,47 @@
+# 비밀 값 — 예시 파일(.env.example)만 올림
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# 데이터 · 고객 사진 · 모델 파일 — Hugging Face 비공개 저장소에만 둠
+data/
+images/
+checkpoints/
+outputs/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.parquet
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# 상담원 화면 (web)
+node_modules/
+dist/
+*.tsbuildinfo
+
+# 개인 클로드 설정 (레포에 안 올림)
+CLAUDE.local.md
+.claude/settings.local.json
+
+# 편집기
+.idea/
+.vscode/
+
+# 오피스 문서를 열면 옆에 생기는 잠금 파일
+~$*
+
+# 로그 · OS
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,49 @@
+name: ❗ 버그 이슈
+description: 의도와 다르게 동작하는 문제를 알릴 때
+labels: ["버그"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        제목에는 어디서 무슨 문제가 생기는지 적어 주세요. 예) `/analyze가 사진 5장 이상이면 멈춤`
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 🗒️ 설명
+      description: 어느 기능 · 단계에서 어떤 현상이 나타나는지
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔄 재현 방법
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✅ 예상 동작 · ❌ 실제 동작
+      value: |
+        - 예상:
+        - 실제:
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 📸 참고 자료
+      description: 에러 로그 · 캡처 (고객 사진은 올리지 마세요)
+
+  - type: input
+    id: env
+    attributes:
+      label: ⚙️ 실행 환경
+      placeholder: 예) Windows 11 · RTX 5060 Ti 16GB · torch 2.11 · transformers 4.52.0

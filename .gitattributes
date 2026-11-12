@@ -1,0 +1,21 @@
+# 줄바꿈은 레포 안에서 LF로 통일 (윈도우 · 맥이 섞여도 diff가 안 깨짐)
+* text=auto eol=lf
+
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# 바이너리
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.pptx binary
+*.docx binary
+*.xlsx binary
+
+# PR 화면에서 잠금 파일 diff 접기
+package-lock.json linguist-generated=true
