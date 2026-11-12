@@ -4,8 +4,8 @@
 파트: AI · DATA · AGENT · BE · FE · DOCS · ALL(공통)
 유형: FEAT · FIX · DOCS · REFACTOR · CHORE
 아직 리뷰받을 상태가 아니면 제목 앞에 [WIP]를 붙여 주세요.
-머지 조건: CodeRabbit 승인 또는 팀원 승인 1개 + 리뷰 스레드 모두 해결.
-CodeRabbit 지적은 고치거나, 고치지 않을 이유를 답글로 남기고 해결 처리해 주세요.
+머지 조건: CodeRabbit 리뷰가 끝나야 머지할 수 있어요(필수 검사).
+CodeRabbit 지적은 고치거나, 고치지 않을 이유를 답글로 남겨 주세요.
 -->
 
 ## 🔗 관련 이슈
