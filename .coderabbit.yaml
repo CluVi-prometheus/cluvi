@@ -10,9 +10,11 @@
 #   아래 사전 검사(제목 형식 · 민감정보)를 통과하면 승인해 막힘이 풀립니다.
 #   고치지 않을 지적이면 이유를 답글로 남기고, 쓰기 권한이 있는 팀원이 그 리뷰를 기각(dismiss)하면 풀립니다.
 # - 검사 통과가 리뷰 완료를 뜻하지는 않습니다. 제목에 [WIP]가 있거나 시간당 리뷰 한도에 걸려 리뷰를 건너뛰어도
-#   검사는 통과로 끝납니다. 머지 전에 리뷰 요약 댓글이 달렸는지 확인하고, 없으면 PR 댓글에 "@coderabbitai review"를 남기세요.
+#   검사는 통과로 끝나고, 이전 리뷰 댓글은 그대로 남습니다. 머지 전에 CodeRabbit의 마지막 리뷰가 마지막 커밋을 본 것인지
+#   (리뷰 정보의 Commits 항목) 확인하고, 아니면 한도가 풀린 뒤 PR 댓글에 "@coderabbitai review"를 남기세요.
 # - 공개 레포라 CodeRabbit 오픈소스 플랜(무료)으로 동작합니다. 시간당 리뷰 횟수에 제한이 있습니다.
-# - 다시 리뷰받기: 새 커밋은 자동으로 다시 봅니다. CodeRabbit은 이미 본 커밋을 다시 보지 않으므로,
+# - 다시 리뷰받기: 새 커밋은 커밋 수 제한 없이 자동으로 다시 봅니다(auto_pause_after_reviewed_commits: 0).
+#   CodeRabbit은 이미 본 커밋을 다시 보지 않으므로,
 #   리뷰가 오류로 실패해 검사가 실패로 남았으면 PR 댓글에 "@coderabbitai full review"(처음부터 다시 리뷰)를 남기세요.
 
 language: ko-KR
@@ -49,6 +51,8 @@ reviews:
   auto_review:
     enabled: true
     drafts: false
+    # 기본값(5)이면 커밋 5개를 리뷰한 뒤 자동 리뷰가 멈춥니다. 수정 요청이 머지를 막으므로 새 커밋을 계속 리뷰하게 끕니다.
+    auto_pause_after_reviewed_commits: 0
     ignore_title_keywords:
       - "[WIP]"
   path_filters:
