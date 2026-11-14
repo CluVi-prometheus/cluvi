@@ -4,8 +4,9 @@
 파트: AI · DATA · AGENT · BE · FE · DOCS · ALL(공통)
 유형: FEAT · FIX · DOCS · REFACTOR · CHORE
 아직 리뷰받을 상태가 아니면 제목 앞에 [WIP]를 붙여 주세요.
-머지 조건: CodeRabbit 리뷰가 끝나야 머지할 수 있어요(필수 검사).
-CodeRabbit 지적은 고치거나, 고치지 않을 이유를 답글로 남겨 주세요.
+머지 조건: CodeRabbit 검사가 끝나고, CodeRabbit의 수정 요청이 남아 있지 않아야 머지할 수 있어요.
+CodeRabbit 지적은 고쳐서 올리면 다시 보고 승인해요. 고치지 않을 지적은 이유를 답글로 남기고 팀원에게 리뷰 기각(dismiss)을 부탁해 주세요.
+검사 통과가 리뷰 완료는 아니에요. [WIP]나 사용량 한도로 리뷰를 건너뛰어도 검사는 통과하니, 리뷰 요약 댓글이 없으면 "@coderabbitai review"를 남겨 주세요.
 -->
 
 ## 🔗 관련 이슈
