@@ -1,4 +1,4 @@
-name: ❗ 버그 이슈
+name: ❗ 버그
 description: 의도와 다르게 동작하는 문제를 알릴 때
 labels: ["버그"]
 body:
@@ -10,40 +10,27 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: 🗒️ 설명
-      description: 어느 기능 · 단계에서 어떤 현상이 나타나는지
+      label: 🗒️ 무슨 일이 생겼나
+      description: 어느 기능 · 단계에서, 예상과 실제가 어떻게 다른지
     validations:
       required: true
 
   - type: textarea
     id: steps
     attributes:
-      label: 🔄 재현 방법
+      label: 🔄 재현 방법 (선택)
       value: |
         1.
         2.
-        3.
-    validations:
-      required: true
-
-  - type: textarea
-    id: expected
-    attributes:
-      label: ✅ 예상 동작 · ❌ 실제 동작
-      value: |
-        - 예상:
-        - 실제:
-    validations:
-      required: true
 
   - type: textarea
     id: evidence
     attributes:
-      label: 📸 참고 자료
-      description: 에러 로그 · 캡처 (고객 사진은 올리지 마세요)
+      label: 📸 로그 · 캡처 (선택)
+      description: 고객 사진이 보이는 캡처는 올리지 마세요 (공개 레포)
 
   - type: input
     id: env
     attributes:
-      label: ⚙️ 실행 환경
-      placeholder: 예) Windows 11 · RTX 5060 Ti 16GB · torch 2.11 · transformers 4.52.0
+      label: ⚙️ 실행 환경 (선택)
+      placeholder: 예) Windows 11 · GPU · torch x.y · transformers x.y

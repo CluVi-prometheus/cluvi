@@ -1,0 +1,29 @@
+name: 🔧 작업
+description: 여러 날 걸리거나 논의가 필요한 일 (작은 수정은 이슈 없이 PR만)
+labels: ["작업"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        제목에는 할 일을 짧게 적어 주세요. 예) `Planner 도구 선택` · `평가 세부 규칙 정리`
+        파트 라벨과 마일스톤은 오른쪽에서 골라 주세요.
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: 📌 무엇을 하나
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: ✅ 완료 조건 (선택)
+      value: |
+        - [ ]
+
+  - type: textarea
+    id: refs
+    attributes:
+      label: 📎 참고 (선택)
+      description: 회의록, 개인 레포 링크, 논문

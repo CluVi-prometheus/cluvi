@@ -1,2 +1,2 @@
-# 틀 없이 빈 이슈를 만드는 버튼을 숨깁니다.
-blank_issues_enabled: false
+# 빈 이슈(회의 메모, 한 줄짜리 질문)도 만들 수 있게 열어 둡니다.
+blank_issues_enabled: true
