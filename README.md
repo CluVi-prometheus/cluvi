@@ -74,12 +74,12 @@ cluvi/
 
 ## 작업 방법
 
-- `main`에는 PR로 합칩니다. 승인은 필요 없어서 작성자가 바로 머지해도 되고, 봐 줬으면 하는 PR만 리뷰를 요청합니다.
-- Squash 머지만 되므로 **PR 제목이 `main`의 커밋 한 줄**이 됩니다. 제목은 `[파트] 내용` (예: `[에이전트] Planner 도구 선택`), 파트 이름은 라벨과 같습니다.
-- 리뷰 전이면 Draft PR로 올립니다. 브랜치 이름은 자유이고, 머지되면 자동 삭제됩니다.
+- `main`에는 PR로 합칩니다. 사람 승인은 필요 없고, **CodeRabbit이 자동 리뷰**합니다. `CodeRabbit` 검사가 끝나고 CodeRabbit의 수정 요청이 남아 있지 않으면 작성자가 머지합니다. 팀원 리뷰는 봐 줬으면 하는 PR에만 요청합니다.
+- Squash 머지만 되므로 **PR 제목이 `main`의 커밋 한 줄**이 됩니다. 제목은 `[파트] [유형] 작업 내용` (예: `[AGENT] [FEAT] Planner 도구 선택`), CodeRabbit이 형식을 검사합니다. 파트 `AI` `DATA` `AGENT` `BE` `FE` `DOCS` `ALL`, 유형 `FEAT` `FIX` `DOCS` `REFACTOR` `CHORE`
+- 리뷰 전이면 Draft PR로 올리거나 제목 앞에 `[WIP]`를 붙입니다. 브랜치 이름은 자유이고, 머지되면 자동 삭제됩니다.
 - 이슈는 필요할 때만 씁니다. 팀이 정해야 진행되는 일에는 `결정 필요` 라벨을 붙입니다.
 - 데모 · 최종 시점은 태그로 남깁니다 (`demo`, `v1.0`). develop 브랜치는 두지 않습니다.
-- GitHub가 막는 건 `main` 삭제 · 강제 push · 직접 push뿐입니다 (Settings → Rules, 사본: [`.github/rulesets/main.json`](.github/rulesets/main.json)).
+- GitHub 규칙: `main` 삭제 · 강제 push · 직접 push 금지, `CodeRabbit` 필수 검사 (Settings → Rules, 사본: [`.github/rulesets/main.json`](.github/rulesets/main.json)). CodeRabbit 설정은 [`.coderabbit.yaml`](.coderabbit.yaml)
 
 | 라벨 종류 | 라벨 |
 |---|---|
