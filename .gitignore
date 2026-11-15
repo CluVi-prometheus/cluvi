@@ -1,23 +1,24 @@
-# 비밀 값 — 예시 파일(.env.example)만 올림
-.env
-.env.*
-!.env.example
-*.pem
-*.key
-
-# 사진은 기본 차단. 직접 만들거나 찍은 그림만 아래 허용 폴더에 둠 (고객 사진 금지)
-*.jpg
-*.jpeg
-*.png
-*.webp
-*.gif
+# 사진은 기본 차단 (대소문자 모두, 아이폰 HEIC · HEIF 포함).
+# 직접 만들거나 찍은 그림만 아래 허용 폴더에 둠 (고객 사진 금지)
+*.[jJ][pP][gG]
+*.[jJ][pP][eE][gG]
+*.[pP][nN][gG]
+*.[wW][eE][bB][pP]
+*.[gG][iI][fF]
+*.[hH][eE][iI][cC]
+*.[hH][eE][iI][fF]
 !docs/assets/**
 !web/src/assets/**
 !web/public/**
 
-# 데이터 · 예측 결과 · 모델 파일 — Hugging Face 비공개 저장소나 각자 PC에만
+# 데이터 · 업로드 · 예측 결과 · 모델 파일 — Hugging Face 비공개 저장소나 각자 PC에만
 data/
 images/
+# 허용 폴더 안의 images/ 폴더는 다시 허용
+!docs/assets/**/images/
+!web/src/assets/**/images/
+!web/public/**/images/
+uploads/
 checkpoints/
 outputs/
 *.safetensors
@@ -62,3 +63,10 @@ CLAUDE.local.md
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# 비밀 값 — 맨 아래에 둬서 허용 폴더 안에서도 항상 막힘. 예시 파일(.env.example)만 올림
+.env
+.env.*
+!.env.example
+*.pem
+*.key

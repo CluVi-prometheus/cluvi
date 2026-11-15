@@ -74,7 +74,7 @@ cluvi/
 
 ## 작업 방법
 
-- `main`에는 PR로 합칩니다. 사람 승인은 필요 없고, **CodeRabbit이 자동 리뷰**합니다. `CodeRabbit` 검사가 끝나고 CodeRabbit의 수정 요청이 남아 있지 않으면 작성자가 머지합니다. 팀원 리뷰는 봐 줬으면 하는 PR에만 요청합니다.
+- `main`에는 PR로 합칩니다. 사람 승인은 필요 없고, **CodeRabbit이 자동 리뷰**합니다. `CodeRabbit` 검사가 끝나고 CodeRabbit의 수정 요청이 남아 있지 않으면 작성자가 머지합니다. 검사 통과가 리뷰 완료를 뜻하지는 않으므로(`[WIP]`나 사용량 한도로 건너뛰어도 통과), 마지막 리뷰가 마지막 커밋을 봤는지 확인하고 아니면 `@coderabbitai review`를 남깁니다. 팀원 리뷰는 봐 줬으면 하는 PR에만 요청합니다.
 - Squash 머지만 되므로 **PR 제목이 `main`의 커밋 한 줄**이 됩니다. 제목은 `[파트] [유형] 작업 내용` (예: `[AGENT] [FEAT] Planner 도구 선택`), CodeRabbit이 형식을 검사합니다. 파트 `AI` `DATA` `AGENT` `BE` `FE` `DOCS` `ALL`, 유형 `FEAT` `FIX` `DOCS` `REFACTOR` `CHORE`
 - 리뷰 전이면 Draft PR로 올리거나 제목 앞에 `[WIP]`를 붙입니다. 브랜치 이름은 자유이고, 머지되면 자동 삭제됩니다.
 - 이슈는 필요할 때만 씁니다. 팀이 정해야 진행되는 일에는 `결정 필요` 라벨을 붙입니다.
